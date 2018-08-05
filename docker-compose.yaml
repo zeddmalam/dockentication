@@ -1,0 +1,12 @@
+version: "2"
+services:
+  dockentication:
+    build: .
+    environment:
+      - DOCKENTICATION_EXTERNAL_PORT=3005
+      - DOCKENTICATION_INTERNAL_PORT=3000
+      - DOCKENTICATION_SSL_KEY=key.pem
+      - DOCKENTICATION_SSL_CERT=server.crt
+    ports:
+      - "3005:3005"
+

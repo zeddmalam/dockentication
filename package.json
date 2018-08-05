@@ -1,0 +1,24 @@
+{
+  "name": "dockentication",
+  "version": "1.0.0",
+  "description": "Is a layer with node js proxy server which provides out of the box authentication for your application.",
+  "main": "index.js",
+  "dependencies": {
+    "http-proxy": "^1.17.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --experimental-modules index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeddmalam/dockentication.git"
+  },
+  "author": "Dmytro Bukhanets",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zeddmalam/dockentication/issues"
+  },
+  "homepage": "https://github.com/zeddmalam/dockentication#readme"
+}
