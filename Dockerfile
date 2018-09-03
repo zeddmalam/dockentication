@@ -4,8 +4,8 @@ WORKDIR /home/node/dockentication
 
 ADD index.mjs .
 ADD package.json .
-ADD ssl/key.pem .
-ADD ssl/server.crt .
+#ADD ssl/key.pem .
+#ADD ssl/server.crt .
 
 RUN npm install
 
