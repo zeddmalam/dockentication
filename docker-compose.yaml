@@ -3,10 +3,13 @@ services:
   dockentication:
     build: .
     environment:
-      - DOCKENTICATION_EXTERNAL_PORT=3005
-      - DOCKENTICATION_INTERNAL_PORT=3000
-      - DOCKENTICATION_SSL_KEY=key.pem
-      - DOCKENTICATION_SSL_CERT=server.crt
+      - DOCKENTICATION_PORT=3005
+      - DOCKENTICATION_NEXT_HOST=http://band-manager-backend
+      - DOCKENTICATION_NEXT_PORT=3082
+      - API_OAUTH_AUTHORIZE=http://oauth.x-vivo.de/api/oauth/authorized
     ports:
       - "3005:3005"
-
+networks:
+  default:
+    external:
+      name: band-manager-api

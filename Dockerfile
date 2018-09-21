@@ -10,7 +10,10 @@ ADD package.json .
 RUN npm install
 
 RUN pwd
+RUN nohup bash -c "cd /home/node/dockentication && npm start" &
 
 EXPOSE 3005
 
 CMD ["npm", "start"]
+
+#ENTRYPOINT ["/bin/bash", "-c", "cd /home/node/dockentication && npm start", "&&"]
